@@ -1,4 +1,4 @@
-diceware
+dicewords
 ========
 
-Very simple, straightforward DiceWare password generator
+Very simple, straightforward DiceWare passphrase generator
