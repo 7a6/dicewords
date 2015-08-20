@@ -921,7 +921,9 @@ var dict = []string{
 
 var l = flag.Int("len", 5, "length (in words, default 5) of passphrase")
 var n = flag.Int("num", 1, "number of passphrases to generate (default 1)")
-var cap = flag.String("cap", "random", "number of passphrases to generate (default 1)")
+var cap = flag.String("cap", "none", "use capitalization (options are: random, camel, none)")
+var ch = flag.String("special", "no", "include special chars (options are: punc, number)")
+var sp = flag.String("spaces", "no", "include spaces between words of passphrase")
 
 func get(n int) string {
 	return dict[n&0x1fff]
